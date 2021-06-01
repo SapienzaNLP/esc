@@ -1,0 +1,6 @@
+transformers==3.2.0
+pytorch-lightning==0.9.0
+wandb
+nltk==3.4.5
+nlp
+black==21.5b2
