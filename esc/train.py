@@ -41,7 +41,6 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--amp_level", default="O1", type=str)
     parser.add_argument("--validation_check_interval", default=2000, type=int)
     parser.add_argument("--run_name", type=str, default="default_name")
-    parser.add_argument("--run_name", type=str, default="default_name")
     parser.add_argument("--save_topk", type=int, default=5)
     parser.add_argument("--wandb_project", default="esc", required=False)
     parser.add_argument("--patience", type=int, default=15)
