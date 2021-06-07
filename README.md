@@ -1,6 +1,6 @@
 # ESC: Redesigning WSD with Extractive Sense Comprehension
 In ESC ([Barba et al., 2021](https://www.aclweb.org/anthology/2021.naacl-main.371/)) we redesigned Word Sense 
-Disambiguation as an Extractive Reading Comprehension task and achieved unprecedented performances on a number of 
+Disambiguation ([Bevilacqua et al., 2021](https://mbevila.github.io/)) as an Extractive Reading Comprehension task and achieved unprecedented performances on a number of 
 different benchmarks and settings. In this repo we provide the code to reproduce the results of the paper along with the
 checkpoints for the best models.
 
@@ -44,7 +44,7 @@ You can disambiguate a corpus using the script ```esc/predict.py```:
 PYTHONPATH=$(pwd) python esc/predict.py --ckpt <escher_checkpoint.ckpt> --dataset-paths data/WSD_Evaluation_Framework/Evaluation_Datasets/semeval2007/semeval2007.data.xml --prediction-types probabilistic
 ```
 
-Where the dataset-paths that you provide to the model must be in a format that follows the one introduced in [Raganato et al. (2017)](https://www.aclweb.org/anthology/E17-1010/).
+Where the dataset-paths that you provide to the model must be in a format that follows the one introduced by [Raganato et al. (2017)](https://www.aclweb.org/anthology/E17-1010/).
 For reference, all the datasets in the directory ```data/WSD_Evaluation_Framework``` follow this format.
 The predictions will be saved in the folder ```predictions``` with the name ```<dataset_name>_predictions.txt```.
 
@@ -56,7 +56,7 @@ If you want to train your own escher model you just have to run the following co
 PYTHONPATH=$(pwd) python esc/train.py --run_name fresh_escher_model --add_glosses_noise --train_path data/WSD_Evaluation_Framework/Training_Corpora/SemCor/semcor.data.xml
 ```
 
-All the hyperparameters are set by default to the one utilized in the paper. If you want to 
+All the hyperparameters are set by default to the ones utilized in the paper. If you want to 
 list them all just execute:
 ```bash
 PYTHONPATH=$(pwd) python esc/train.py -h
@@ -70,7 +70,7 @@ PYTHONPATH=$(pwd) python esc/train.py --learning_rate 0.0005 --gradient_acc_step
 ```
 
 ## License
-This project is released under the CC-BY-NC 4.0 license (see license.txt). If you use ESC, please put a link to this repo.
+This project is released under the CC-BY-NC 4.0 license (see license.txt). If you use ESC, please put a link to this repo and cite the paper: [ESC: Redesigning WSD with Extractive Sense Comprehension](https://www.aclweb.org/anthology/2021.naacl-main.371/).
 
 ## Acknowledgements
 The authors gratefully acknowledge the support of the [ERC Consolidator Grant MOUSSE](http://mousse-project.org) No. 726487 under the European Union's Horizon 2020 research and innovation programme.
