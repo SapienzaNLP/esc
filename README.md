@@ -45,7 +45,7 @@ PYTHONPATH=$(pwd) python esc/predict.py --ckpt <escher_checkpoint.ckpt> --datase
 ```
 
 Where the dataset-paths that you provide to the model must be in a format that follows the one introduced in [Raganato et al. (2017)](https://www.aclweb.org/anthology/E17-1010/).
-For reference all the datasets in the directory ```data/WSD_Evaluation_Framework``` follows this format.
+For reference, all the datasets in the directory ```data/WSD_Evaluation_Framework``` follow this format.
 The predictions will be saved in the folder ```predictions``` with the name ```<dataset_name>_predictions.txt```.
 
 If you want to evaluate the model on a dataset, just add the parameter ```--evaluate``` on the previous command.
