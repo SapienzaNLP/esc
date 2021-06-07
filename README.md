@@ -36,7 +36,7 @@ and follow the instructions.
 ## Checkpoints
 These are the checkpoints of escher when trained on:
 - [SemCor](https://drive.google.com/file/d/100jxjLIdmSzrMXXOWgrPz93EG0JBnkfr/view?usp=sharing) (SE07: 76.3 | ALL: 80.7)
-- SemCor & Oxford (Available upon request SE07: 77.8 | ALL: 81.5)
+- SemCor & Oxford (Available upon request, SE07: 77.8 | ALL: 81.5)
 
 ## Prediction and Evaluation
 You can disambiguate a corpus using the script ```esc/predict.py```:
