@@ -1,6 +1,6 @@
 # ESC: Redesigning WSD with Extractive Sense Comprehension
 In ESC ([Barba et al., 2021](https://www.aclweb.org/anthology/2021.naacl-main.371/)) we redesigned Word Sense 
-Disambiguation as an Extractive Reading Comprehension task, and achieved unprecedented performances on a number of 
+Disambiguation as an Extractive Reading Comprehension task and achieved unprecedented performances on a number of 
 different benchmarks and settings. In this repo we provide the code to reproduce the results of the paper along with the
 checkpoints for the best models.
 
